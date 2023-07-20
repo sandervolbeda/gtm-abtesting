@@ -33,7 +33,7 @@ theme:
 nav:
    - 'index.md'
    - 'setup.md'
-   - 'targetting.md'
+   - 'targetting.md' 
    - 'analyses.md'
    - 'splittest.md'
 
