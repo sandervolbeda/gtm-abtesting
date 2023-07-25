@@ -85,9 +85,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="AB testing with GTM" class="md-header__button md-logo" aria-label="AB testing with GTM" data-md-component="logo">
       
@@ -188,6 +186,89 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Setup
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../targetting/" class="md-tabs__link">
+      Targetting
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../analyses/" class="md-tabs__link">
+      Analyses
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../splittest/" class="md-tabs__link">
+      Split Test Experiment
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../development/" class="md-tabs__link">
+      Development
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -200,10 +281,12 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="AB testing with GTM" class="md-nav__button md-logo" aria-label="AB testing with GTM" data-md-component="logo">
       
@@ -271,6 +354,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    Checklist
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#google-analytics-4" class="md-nav__link">
@@ -409,8 +499,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#publish-experiment" class="md-nav__link">
-    Publish Experiment
+  <a href="#folder-structure" class="md-nav__link">
+    Folder Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publish-setupexperiment" class="md-nav__link">
+    Publish Setup/Experiment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-experiment-live-site" class="md-nav__link">
+    View Experiment (Live Site)
   </a>
   
 </li>
@@ -468,6 +572,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -484,6 +603,16 @@
 
 
 <h1 id="setup">Setup</h1>
+<p>Down below you'll be able to find a quick checklist of what you need to get started.</p>
+<h2 id="checklist">Checklist</h2>
+<ol>
+<li>You must have Google Tag Manager connected to your website.</li>
+<li>You must have publishing rights within the Google Tag Manager container.</li>
+<li>You must have GA4 connected to the website.</li>
+<li>You must have admin access to the GA4 account that is linked.</li>
+<li>You should possess basic knowledge of HTML, CSS, and JavaScript (JS).</li>
+</ol>
+<hr />
 <p>Let’s start with creating a custom definition in Google Analytics 4. This will be your connection between GTM and GA4. It's important to start with this step because it can take time before data will be appearing in Google Analytics 4.</p>
 <hr />
 <h2 id="google-analytics-4">Google Analytics 4</h2>
@@ -501,8 +630,8 @@
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th align="left">Input</th>
+<th>Field:</th>
+<th align="left">Input:</th>
 </tr>
 </thead>
 <tbody>
@@ -528,21 +657,422 @@
 <p><em>The downside of GA4 is that it takes time before the data appears. It can take up to 48 hours before data is showing in GA4, after creating the custom definition.</em></p>
 <hr />
 <h2 id="google-tag-manager">Google Tag Manager</h2>
+<hr />
 <h3 id="workspace">Workspace</h3>
+<p>It's smart to avoid working directly on the master branch (or the default Workspace in our situation). To start, it is essential to launch GTM (Google Tag Manager). Locate the Default Workspace option in the left sidebar and click on it. Afterwards, locate the “+” icon positioned in the upper right corner and give it a click.</p>
+<p>[ADD IMAGE HERE]</p>
+<table>
+<thead>
+<tr>
+<th>Field:</th>
+<th align="left">Input:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td align="left">Experimentation setup</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td align="left">Setting up everything to start with experimentation</td>
+</tr>
+</tbody>
+</table>
+<p>Save.</p>
+<p>This will make sure nobody is working on the same version as we are. It’s just a security measure.</p>
+<hr />
 <h3 id="variable-version">Variable (Version)</h3>
+<p>The first thing we’ll do is to create a new variable. This piece of JavaScript will create the version row in the browser localStorage of the visitor.</p>
+<blockquote>
+<p>It’s important to be aware that browsers do not reset the localStorage automatically, unlike Cookies. Visitors have the option to manually reset it by clearing their browser’s cache and other stored data, but the likelihood of them doing so is relatively low. Consequently, running experiments in this manner can surpass the duration of cookies that are automatically reset, thereby enhancing the accuracy of your data.</p>
+</blockquote>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to variables in the sidebar</li>
+<li>Add new User-Defined Variable</li>
+<li>Name it: Version</li>
+<li>Choose as Variable Configuration the Variable Type Custom JavaScript</li>
+<li>Copy and paste the code from down below into the variable</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>  <span class="n">var</span> <span class="n">keyValue</span> <span class="o">=</span> <span class="n">localStorage</span><span class="o">.</span><span class="n">getItem</span><span class="p">(</span><span class="s1">&#39;version&#39;</span><span class="p">);</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>  <span class="k">return</span> <span class="n">keyValue</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h3 id="triggers">Triggers</h3>
+<p>Next, we will proceed with configuring all the triggers. To execute a single experiment, you will require three triggers.</p>
+<ul>
+<li>Initialisation trigger</li>
+<li>Control – Page View</li>
+<li>Variant – Page View</li>
+</ul>
+<hr />
 <h4 id="initialisation">Initialisation</h4>
+<p>This trigger is used to see if there is a experiment running on the page that the user visits.</p>
+<ol>
+<li>Go to the triggers in GTM</li>
+<li>Click the ‘New’ button to add a trigger</li>
+<li>Name it: Experiment 1 – Initialisation</li>
+<li>Select Trigger Configuration</li>
+<li>Choose Page View &gt; Initialisation</li>
+<li>Select: This trigger fires on ‘Some Initialisation Events’</li>
+</ol>
+<p>Now you'll have to do some additional inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Field:</th>
+<th align="left">Input:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First</strong></td>
+<td align="left">Page path</td>
+</tr>
+<tr>
+<td><strong>Second</strong></td>
+<td align="left">equals</td>
+</tr>
+<tr>
+<td><strong>Third</strong></td>
+<td align="left">/</td>
+</tr>
+</tbody>
+</table>
+<p>Save!</p>
+<blockquote>
+<ol>
+<li>
+<p>If path path is not in the list choose ‘Choose Buildt-In Variable’ and select Page path.</p>
+</li>
+<li>
+<p>The third field with the / represents the homepage.</p>
+</li>
+<li>
+<p>This is also the place where we can add more requirements, for example device targeting.</p>
+</li>
+</ol>
+</blockquote>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h4 id="control-page-view">Control - Page View</h4>
+<p>Now, let’s delve into the experiment trigger (for the control).</p>
+<ol>
+<li>Click the ‘New’ button to add a trigger</li>
+<li>Name it: Experiment 1 – Control – Page View</li>
+<li>Select Trigger Configuration</li>
+<li>Choose Page View &gt; Page View</li>
+<li>Select: This trigger fires on ‘Some Page Views’</li>
+</ol>
+<p>Now you'll have to do some additional inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Field:</th>
+<th align="left">Input:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First</strong></td>
+<td align="left">Version</td>
+</tr>
+<tr>
+<td><strong>Second</strong></td>
+<td align="left">matches RegEx</td>
+</tr>
+<tr>
+<td><strong>Third</strong></td>
+<td align="left"><code>Slot 0$|Slot 1$|Slot 2$|Slot 3$|Slot 4</code></td>
+</tr>
+</tbody>
+</table>
+<p>Add another row:</p>
+<table>
+<thead>
+<tr>
+<th>Field:</th>
+<th align="left">Input:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First</strong></td>
+<td align="left">Page path</td>
+</tr>
+<tr>
+<td><strong>Second</strong></td>
+<td align="left">equals</td>
+</tr>
+<tr>
+<td><strong>Third</strong></td>
+<td align="left">/</td>
+</tr>
+</tbody>
+</table>
+<p>Save!</p>
+<p>That’s it for the control variant.</p>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h4 id="variant-page-view">Variant - Page View</h4>
+<p>Now, let’s delve into the experiment trigger (for the variant).</p>
+<ol>
+<li>Click the ‘New’ button to add a trigger</li>
+<li>Name it: Experiment 1 – Variant – Page View</li>
+<li>Select Trigger Configuration</li>
+<li>Choose Page View &gt; Page View</li>
+<li>Select: This trigger fires on ‘Some Page Views’</li>
+</ol>
+<p>Now you'll have to do some additional inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Field:</th>
+<th align="left">Input:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First</strong></td>
+<td align="left">Version</td>
+</tr>
+<tr>
+<td><strong>Second</strong></td>
+<td align="left">matches RegEx</td>
+</tr>
+<tr>
+<td><strong>Third</strong></td>
+<td align="left"><code>Slot 5$|Slot 6$|Slot 7$|Slot 8$|Slot 9$</code></td>
+</tr>
+</tbody>
+</table>
+<p>Add another row:</p>
+<table>
+<thead>
+<tr>
+<th>Field:</th>
+<th align="left">Input:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First</strong></td>
+<td align="left">Page path</td>
+</tr>
+<tr>
+<td><strong>Second</strong></td>
+<td align="left">equals</td>
+</tr>
+<tr>
+<td><strong>Third</strong></td>
+<td align="left">/</td>
+</tr>
+</tbody>
+</table>
+<p>Save!</p>
+<p>That’s it for the variant. All the triggers are done now.</p>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h3 id="tags">Tags</h3>
+<p>It’s time to add three new tags and make adjustments to the GA4 configuration to ensure that the data is sent to the custom definition we previously created in GA4.</p>
+<hr />
 <h4 id="splitter-tag">Splitter Tag</h4>
+<p>After the Initialisation trigger has been activated, we will employ a tag that randomly divides the traffic into either the control or variant. This split tag will be triggered accordingly.</p>
+<ol>
+<li>Move to tags in the navigation of GTM</li>
+<li>Click ‘New’ button</li>
+<li>Name: Experiment 1 – Splitter</li>
+<li>Tag Configuration select Custom HTML</li>
+<li>Add the script from down below into the Custom HTML block in GTM</li>
+<li>Select Trigger: Experiment 1 – Initialisation</li>
+<li>Save</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>  <span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>  <span class="n">var</span> <span class="n">slots</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>  <span class="n">var</span> <span class="n">version</span><span class="p">;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>  <span class="k">if</span> <span class="p">(</span><span class="n">localStorage</span><span class="o">.</span><span class="n">getItem</span><span class="p">(</span><span class="s1">&#39;version&#39;</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>    <span class="n">version</span> <span class="o">=</span> <span class="n">localStorage</span><span class="o">.</span><span class="n">getItem</span><span class="p">(</span><span class="s1">&#39;version&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>    <span class="n">var</span> <span class="n">random</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">Math</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="n">slots</span><span class="p">);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>    <span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;Slot &#39;</span> <span class="o">+</span> <span class="p">(</span><span class="n">random</span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>    <span class="n">localStorage</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="s1">&#39;version&#39;</span><span class="p">,</span> <span class="n">version</span><span class="p">);</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>  <span class="p">}</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a>  <span class="k">return</span> <span class="n">version</span><span class="p">;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a>  <span class="p">})();</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>That’s it for the splitter tag.</p>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h4 id="control-tag">Control Tag</h4>
+<p>Once the splitter tag has successfully executed and the user falls within one of the slots ranging from 0 to 4, the control tag will be triggered.</p>
+<ol>
+<li>Click ‘New’ button</li>
+<li>Name: Experiment 1 – Control – Script</li>
+<li>Tag Configuration select Custom HTML</li>
+<li>Add the script from down below into the Custom HTML block in GTM</li>
+<li>Select Trigger: Experiment 1 – Control – Page View</li>
+<li>Save</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>  <span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>    <span class="o">//</span> <span class="n">experiment</span> <span class="n">code</span> <span class="n">here</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Control loaded&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>  <span class="p">})();</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<blockquote>
+<p>We're also running a script for the control variant. This way you could setup some additional tracking for example.</p>
+</blockquote>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h4 id="variant-tag">Variant Tag</h4>
+<p>Once the splitter tag has successfully executed and the user falls within one of the slots ranging from 5 to 9, the variant tag will be triggered.</p>
+<ol>
+<li>Click ‘New’ button</li>
+<li>Name: Experiment 1 – Variant – Script</li>
+<li>Tag Configuration select Custom HTML</li>
+<li>Add the script from down below into the Custom HTML block in GTM</li>
+<li>Select Trigger: Experiment 1 – Variant – Page View</li>
+<li>Save</li>
+</ol>
+<blockquote>
+<p>This is the place where you can add the JavaScript for your experiment to manipulate the page.</p>
+</blockquote>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>  <span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>    <span class="o">//</span> <span class="n">experiment</span> <span class="n">code</span> <span class="n">here</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Variant loaded&quot;</span><span class="p">);</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>  <span class="p">})();</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h3 id="ga4-confirguration-tag">GA4 Confirguration tag</h3>
+<p>Lastly, we need to edit to the Google Analytics tag.</p>
+<ol>
+<li>Open the GA4 configuration tag</li>
+<li>Open User Properties</li>
+<li>Add new row</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Field:</th>
+<th align="left">Input:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Property name</strong></td>
+<td align="left">Version</td>
+</tr>
+<tr>
+<td><strong>Value</strong></td>
+<td align="left">{{Version}}</td>
+</tr>
+</tbody>
+</table>
+<p>Save</p>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h2 id="debug">Debug</h2>
+<p>Before publishing the setup or before you start running a experiment you always need to check if it's working. Otherwise you can't trust the setup and data that's collected.</p>
+<hr />
 <h3 id="gtm-experiments">GTM experiments</h3>
+<p>The first step is simple. Preview your new changes on the website via Google Tag Manager.</p>
+<p>[ADD IMAGE HERE]</p>
+<p>Time to review if everything works as it is suppose to.</p>
+<p><strong>Check 1:</strong></p>
+<p>Second step of the preview mode should fire the Experiment 1 – Splitter tag.</p>
+<p>[ADD IMAGE HERE]</p>
+<p><strong>Check 2:</strong></p>
+<p>Move to the Variables tab (still in step 2) and check if a Slot has been set with the Version (bottom row).</p>
+<p>[ADD IMAGE HERE]</p>
+<p><strong>Check 3:</strong></p>
+<p>Navigate to step 3 in the left sidebar and verify whether Experiment 1 has been triggered. Depending on your version, the Control should be fired if your slot falls between 0 and 4, while the variant should be fired if the slot value ranges from 5 to 9.</p>
+<p>[ADD IMAGE HERE]</p>
+<p>Everything seems to work with me. Now let’s also check the console log to check if the Control Script has fired.</p>
+<p><strong>Check 4:</strong></p>
+<p>Open the website (still preview mode of GTM), right-click and select Inspect. Now open the console tab and check if there’s anywhere ‘Control loaded’ or ‘Variant loaded’ in the content.</p>
+<p>[ADD IMAGE HERE]</p>
+<p>Leave the GTM preview mode open before heading to the next step. We’ll still need it. I mean this tab:</p>
+<p>[ADD IMAGE HERE]</p>
+<hr />
 <h3 id="ga4-events">GA4 events</h3>
-<h2 id="publish-experiment">Publish Experiment</h2>
+<p>The first thing you’ll have to do is to add <a href="https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna" target="_blank">Google Analytics Debugger</a> to your browser. By doing this, you will be able to utilize the Debugger view in Google Analytics 4. This functionality applies to every website present in your Google Analytics account, making it incredibly useful in various scenarios.</p>
+<ol>
+<li>Activate the extension on the GTM preview page</li>
+<li>Go to your GA4 &gt; Admin &gt; Account &gt; Property</li>
+<li>Check for DebugView (last item in the first list)</li>
+<li>Select your device from the dropdown (might be hard, but give it a try)</li>
+<li>Now check if the Version is shown in the debug list.</li>
+</ol>
+<p>[ADD IMAGE HERE]</p>
+<blockquote>
+<p>Remember, as mentioned earlier. It can take up to 48 before data is shown in GA4. However, the DebugView is live, so there might be little delay (couple of seconds).</p>
+</blockquote>
+<hr />
+<h2 id="folder-structure">Folder Structure</h2>
+<p>Since we're working with numerous tags, triggers, and variables, it's wise to organize everything related to experimentation into a single folder (or create multiple folders if you prefer to structure them per experiment).</p>
+<ol>
+<li>Open up Google Tag Manager</li>
+<li>Select ‘Folders’ in the left side menu</li>
+<li>Click ‘New Folder’</li>
+<li>Name it: Experimentation</li>
+<li>Select all Experimentation related items (do not include GA configuration)</li>
+<li>Select ‘Move’ and move the items to the Experimentation Folder</li>
+</ol>
+<p>[ADD IMAGE HERE]</p>
+<hr />
+<h2 id="publish-setupexperiment">Publish Setup/Experiment</h2>
+<p>Everything is set to go. We're going to publish </p>
+<ol>
+<li>Click the blue ‘Submit’ button top right corner</li>
+<li>Click ‘Publish’</li>
+<li>Close the slide-in</li>
+<li>Open up the Workspace you’re now in</li>
+<li>Click update (next to ‘This workspace is out of date.’)</li>
+<li>Click update</li>
+</ol>
+<p>[ADD IMAGE HERE]</p>
+<p>It’s working!</p>
+<blockquote>
+<p>Important! Always start with an A/A test, which means no changes to the website, to make sure you collect the data you need. It's included in this setup. When you've published everything make sure to check your website and the page you're running the experiment on with the console log of the developer tools. This will either show the message 'Control loaded' or 'Variant loaded'.</p>
+</blockquote>
+<hr />
+<h2 id="view-experiment-live-site">View Experiment (Live Site)</h2>
 
 
 
@@ -556,6 +1086,11 @@
   <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
         
       </main>
       
@@ -623,7 +1158,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.sections", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.a51614de.min.js"></script>

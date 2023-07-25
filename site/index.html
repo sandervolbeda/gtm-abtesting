@@ -83,9 +83,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="AB testing with GTM" class="md-header__button md-logo" aria-label="AB testing with GTM" data-md-component="logo">
       
@@ -186,6 +184,89 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="." class="md-tabs__link md-tabs__link--active">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="setup/" class="md-tabs__link">
+      Setup
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="targetting/" class="md-tabs__link">
+      Targetting
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="analyses/" class="md-tabs__link">
+      Analyses
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="splittest/" class="md-tabs__link">
+      Split Test Experiment
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="development/" class="md-tabs__link">
+      Development
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -198,10 +279,12 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="AB testing with GTM" class="md-nav__button md-logo" aria-label="AB testing with GTM" data-md-component="logo">
       
@@ -254,26 +337,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-get-started" class="md-nav__link">
-    Before you get started
-  </a>
-  
-    <nav class="md-nav" aria-label="Before you get started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#checklist" class="md-nav__link">
-    Checklist
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#explanation-in-text" class="md-nav__link">
@@ -350,6 +413,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -395,19 +473,6 @@
 <li>JavaScript is required to run your experiments</li>
 <li>Data accuracy may be affected due to GA4 (if you don’t use BigQuery)</li>
 </ul>
-<p><em>This list was updated on 20th of July 2023.</em></p>
-<hr />
-<h2 id="before-you-get-started">Before you get started</h2>
-<p>Down below you'll be able to find a quick checklist of what you need to get started.</p>
-<h3 id="checklist">Checklist</h3>
-<ol>
-<li>You must have Google Tag Manager connected to your website.</li>
-<li>You must have publishing rights within the Google Tag Manager container.</li>
-<li>You must have GA4 connected to the website.</li>
-<li>You must have admin access to the GA4 account that is linked.</li>
-<li>You should possess basic knowledge of HTML, CSS, and JavaScript (JS).</li>
-</ol>
-<hr />
 <h2 id="explanation-in-text">Explanation in text</h2>
 <p>Allow me to briefly explain how it works, so you have a clear understanding of what you’ll be working on. It’s worth noting that this process is asynchronous, which means that it occurs during the website loading phase rather than after it has loaded.</p>
 <p>When a visitor lands on your website, Google Tag Manager will trigger the initialisation event, which is the first thing we’ll set up. This event will trigger the initialisation trigger.</p>
@@ -430,6 +495,11 @@
   <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
         
       </main>
       
@@ -497,7 +567,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.sections", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.a51614de.min.js"></script>
