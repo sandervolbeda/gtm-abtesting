@@ -3,11 +3,11 @@ site_url: https://abtesting.sandervolbeda.com/
 theme:
   name: material
   features:
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.tabs
-    # - navigation.sections
-    # - navigation.top
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
     - toc.follow
     - toc.integrate
     - search.suggest
@@ -36,6 +36,7 @@ nav:
    - 'targetting.md' 
    - 'analyses.md'
    - 'splittest.md'
+   - 'development.md'
 
 extra:
   social:

@@ -8,8 +8,6 @@ The tools we'll be using are:
 2. Google Tag Manager
 3. Microsoft Clarity
 
-
-
 ---
 
 If you don't like to read the whole page, but rather listen to the specifics you now can. This episode of "Golden Nuggets for Experimentation" clarifies the principles as well.
@@ -35,24 +33,6 @@ It's goot to know what the pros and cons are of running experiments this way.
 - No WYSIWYG editor
 - JavaScript is required to run your experiments
 - Data accuracy may be affected due to GA4 (if you don’t use BigQuery)
-
-*This list was updated on 20th of July 2023.*
-
----
-
-## Before you get started
-
-Down below you'll be able to find a quick checklist of what you need to get started.
-
-### Checklist
-
-1. You must have Google Tag Manager connected to your website.
-2. You must have publishing rights within the Google Tag Manager container.
-3. You must have GA4 connected to the website.
-4. You must have admin access to the GA4 account that is linked.
-5. You should possess basic knowledge of HTML, CSS, and JavaScript (JS).
-
----
 
 ## Explanation in text
 
