@@ -1,42 +1,59 @@
 site_name: AB testing with GTM
 site_url: https://abtesting.sandervolbeda.com/
+site_author: Sander Volbeda
+site_description: >-
+  Start with A/B testing for free using Google Tag Manager and Google Analytics 4.
+
 theme:
   name: material
   features:
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - toc.follow
-    - toc.integrate
-    - search.suggest
-    - search.highlight
+    - announce.dismiss
     - content.tabs.link
+    - content.action.edit
+    - content.action.view
     - content.code.annotation
     - content.code.copy
+    - content.tooltips
+    - navigation.instant
+    - navigation.instant.prefetch
+    # - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - toc.follow
+    # - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
   language: en
   palette:
     - scheme: default
-      toggle: 
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
-      accent: lime
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
-nav:
-   - 'index.md'
-   - 'setup.md'
-   - 'targetting.md' 
-   - 'analyses.md'
-   - 'splittest.md'
-   - 'development.md'
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true   
+  - git-revision-date-localized
 
 extra:
   social:
@@ -48,21 +65,76 @@ extra:
       link: https://www.linkedin.com/in/sandervolbeda/
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.highlight: 
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
   - pymdownx.snippets
-  - admonition
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.mark
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 copyright: |
   &copy; 2023 <a href="https://sandervolbeda.com/"  target="_blank" rel="noopener">Sander Volbeda</a>
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+nav:
+  - Welcome: index.md
+  - Getting Started: 
+    - Checklist: setup.md
+    - Google Analytics 4: index.md
+    - Google Tag Manager : index.md
+    - Debug: index.md
+    - Folder Structure: index.md
+    - Publish Setup/Experiment: index.md
+    - View Experiment (Live Site): index.md
+  - Targetting:
+    - Page Path: targetting.md
+    - Device Type: targetting.md
+    - Class Based: targetting.md
+  - Experiment Type:
+    - Split Test (Redirect): splittest.md
+    - MVT: splittest.md
+  - Analysis GA4:
+    - Free Form: analyses.md
+  - Development:
+    - JavaScript: development.md
+    - TamperMonkey: development.md
+    - Reduce Load Time: development.md
+    - Experiment Heatmaps: development.md
+  - Extra:
+    - Changelog: setup.md
+    - Contribution: setup.md

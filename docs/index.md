@@ -54,5 +54,3 @@ If the version includes slots 5, 6, 7, 8, or 9, the variant trigger is fired, wh
 If the version includes slots 0, 1, 2, 3, or 4, the control trigger is fired, which executes the control tag.
 
 Each slot represents 10% of the traffic, and the number of slots is used to randomly split traffic and facilitate Multi-Variant Testing.
-
----
