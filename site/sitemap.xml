@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://abtesting.sandervolbeda.com/</loc>
-         <lastmod>2023-08-01</lastmod>
+         <lastmod>2023-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abtesting.sandervolbeda.com/analyses/</loc>
-         <lastmod>2023-08-01</lastmod>
+         <lastmod>2023-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abtesting.sandervolbeda.com/development/</loc>
-         <lastmod>2023-08-01</lastmod>
+         <lastmod>2023-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abtesting.sandervolbeda.com/setup/</loc>
-         <lastmod>2023-08-01</lastmod>
+         <lastmod>2023-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abtesting.sandervolbeda.com/splittest/</loc>
-         <lastmod>2023-08-01</lastmod>
+         <lastmod>2023-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abtesting.sandervolbeda.com/targetting/</loc>
-         <lastmod>2023-08-01</lastmod>
+         <lastmod>2023-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
