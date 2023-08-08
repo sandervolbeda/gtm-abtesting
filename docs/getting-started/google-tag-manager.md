@@ -1,52 +1,6 @@
-# Setup
+# Google Tag Manager
 
-Below is a quick checklist of what you need to get started.
-
-## Checklist
-
-1. Google Tag Manager must be connected to the website.
-2. Publishing rights must be granted within the Google Tag Manager container.
-3. GA4 must be connected to the website.
-4. Admin access must be granted to the GA4 account that is linked.
-5. Basic knowledge of HTML, CSS, and JavaScript (JS) is recommended.
-
----
-
-Creating a custom definition in Google Analytics 4 is the first step. This will connect GA and GTM. It is important to start with this step, as it can take time for data to appear in GA4.
-
----
-
-## Google Analytics 4
-Let's dive into GA4 first.
-
-> It is important to note that, with the current setup, one user can only view one experiment. Therefore, running multiple experiments at the same time will drastically reduce the number of users in each experiment.
-
-1. Open **Google Analytics 4**.
-2. Go to **Account > Property**.
-3. Click **Custom definitions** in the property list.
-4. Click the button **Create custom dimensions**.
-5. Fill all the fields with the following details
-
-    | Field:         | Input:           |
-    | ------------- |:-------------|
-    | **Dimension name**    | Version |
-    | **Scope**   | User      |
-    | **Description** | Used for analysing experiments from GTM      |
-    | **User property** | Version      |
-
-6. **Save**
-
-[ADD IMAGE HERE]
-
-*One downside of GA4 is that it can take time for data to appear. In some cases, it may take up to 48 hours after creating a custom definition for data to start showing in GA4.*
-
----
-
-## Google Tag Manager
-
----
-
-### Workspace
+## Workspace
 It is recommended to avoid working directly on the master branch (or the default Workspace in this case). To begin, launch GTM (Google Tag Manager). In the left sidebar, locate the Default Workspace option and click on it. Then, in the upper right corner, look for the + icon and click on it.
 
 [ADD IMAGE HERE]
@@ -62,7 +16,7 @@ This will help ensure that no one else is working on the same version of the cod
 
 ---
 
-### Variable (Version)
+## Variable (Version)
 
 The first step is to create a new variable. This JavaScript will create the ``version`` row in the visitor's browser ``localStorage``.
 
@@ -87,7 +41,7 @@ The first step is to create a new variable. This JavaScript will create the ``ve
 
 ---
 
-### Triggers
+## Triggers
 
 Next, we will configure the triggers. Three triggers are required to execute a single experiment:
 
@@ -97,7 +51,7 @@ Next, we will configure the triggers. Three triggers are required to execute a s
 
 ---
 
-#### Initialization
+### Initialization
 
 This trigger fires when the experiment is first initialized. To create it, follow these steps:
 
@@ -125,7 +79,7 @@ This trigger fires when the experiment is first initialized. To create it, follo
 
 ---
 
-#### Control - Page View
+### Control - Page View
 
 Next, we will create the trigger for the control experiment. To do this, follow these steps:
 
@@ -156,7 +110,7 @@ Next, we will create the trigger for the control experiment. To do this, follow 
 
 ---
 
-#### Variant - Page View
+### Variant - Page View
 
 Now, let’s delve into the experiment trigger (for the variant).
 
@@ -187,13 +141,13 @@ Now, let’s delve into the experiment trigger (for the variant).
 
 ---
 
-### Tags
+## Tags
 
 It is now time to add three new tags and make adjustments to the GA4 configuration. This will ensure that the data is sent to the custom definition we created in GA4.
 
 ---
 
-#### Splitter Tag
+### Splitter Tag
 
 Once the **Initialization trigger** has been activated, we will use a tag to randomly assign visitors to either the **control** or **variant**. This **split tag** will be triggered accordingly.
 
@@ -229,7 +183,7 @@ To create the split tag, follow these steps:
 
 ---
 
-#### Control Tag
+### Control Tag
 
 Once the **splitter tag** has successfully executed and the user falls within one of the slots from **0 to 4**, the **control tag** will be triggered.
 
@@ -260,7 +214,7 @@ To create the control tag, follow these steps:
 
 ---
 
-#### Variant Tag
+### Variant Tag
 
 Once the **splitter tag** has successfully executed and the user falls within one of the slots from **5 to 9**, the **variant tag** will be triggered.
 
@@ -290,7 +244,7 @@ To create the variant tag, follow these steps:
 
 ---
 
-### GA4 Confirguration tag
+## GA4 Confirguration tag
 
 To complete the setup, we need to edit the Google Analytics tag.
 
@@ -301,93 +255,3 @@ To complete the setup, we need to edit the Google Analytics tag.
 5. Click **Save**.
 
 [ADD IMAGE HERE]
-
----
-
-## Debug
-
-Before publishing the setup or starting a new experiment, it is always important to **verify that it is working properly**. Otherwise, you cannot trust the results of the experiment or the data that is collected.
-
----
-
-### GTM experiments
-
-To verify that the experiment is working properly, we need to preview the changes on the website via Google Tag Manager.
-
-1. Open the Preview mode in Google Tag Manager.
-
-    [ADD IMAGE HERE]
-
-2. Navigate to the second step of the preview. The **Experiment 1 – Splitter** tag should be fired.
-
-    [ADD IMAGE HERE]
-
-3. Move to the **Variables** tab and check if a **Slot** has been set with the **Version** (bottom row)
-
-    [ADD IMAGE HERE]
-
-4. Navigate to step 3 in the left sidebar and verify whether **Experiment 1** has been triggered. Depending on your version, the **Control** should be fired if your slot falls between 0 and 4, while the **Variant** should be fired if the slot value ranges from 5 to 9.
-
-    [ADD IMAGE HERE]
-
-    > If everything seems to work, console log can be checked to see which Script has been fired.
-
-5. Open the website (still in preview mode of GTM), right-click and select **Inspect**. Now open the **Console** tab and check if there’s anywhere ```Control loaded``` or ```Variant loaded``` in the content.
-
-    [ADD IMAGE HERE]
-
-Leave the GTM preview mode open before heading to the next step.
-
----
-
-### GA4 events
-
-To use the Debugger view in Google Analytics 4, you will need to add the [Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna){:target="_blank"} extension to your browser. This functionality applies to every website present in your Google Analytics account.
-
-1. Activate the extension on the **preview page** of Google Tag Manager.
-2. Go to **Admin > Account > Property** in your Google Analytics 4 account.
-3. Check for **DebugView** (the last item in the first list).
-4. Select your device from the dropdown. **This may be difficult, but please try**.
-5. Check if the **Version** is shown in the debug list.
-
-[ADD IMAGE HERE]
-
-> Remember, as mentioned earlier, it can take up to 48 hours for data to be shown in GA4. However, the DebugView is live, so there might be a slight delay (a few seconds).
-
----
-
-## Folder Structure
-
-Since there are numerous tags, triggers, and variables involved in experimentation, it is advisable to organize everything related to experimentation into a single folder (or create multiple folders if you prefer to structure them per experiment).
-
-1. Open Google Tag Manager.
-2. Select **Folders** in the left-hand menu.
-3. Click **New Folder**.
-4. Name it: **Experimentation**.
-5. Select all **Experimentation**-related items (do not include GA configuration).
-6. Select **Move** and move the items to the **Experimentation** folder.
-
-[ADD IMAGE HERE]
-
----
-
-## Publish Setup/Experiment
-
-The setup is complete. To publish the experiment, follow these steps:
-
-1. Click the blue **Submit** button in the top right corner.
-2. Click **Publish**.
-3. Close the slide-in.
-4. Open the **Workspace** you are currently in.
-5. Click **Update** (next to **This workspace is out of date**).
-6. Click **Update**.
-
-[ADD IMAGE HERE]
-
-The experiment is now live!
-
-> Important: Always start with an A/A test, which means no changes to the website, to make sure you collect the data you need. This setup includes an A/A test. Once you have published everything, make sure to check your website and the page you are running the experiment on with the console log of the developer tools. This will either show the message **Control loaded** or **Variant loaded**.
-
---- 
-
-## View Experiment (Live Site)

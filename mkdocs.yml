@@ -117,19 +117,20 @@ extra_javascript:
 nav:
   - Welcome: index.md
   - Getting Started: 
-    - Checklist: setup.md
-    - Google Analytics 4: index.md
-    - Google Tag Manager : index.md
-    - Debug: index.md
-    - Folder Structure: index.md
-    - Publish Setup/Experiment: index.md
-    - View Experiment (Live Site): index.md
+    - Checklist: getting-started/checklist.md
+    - Google Analytics 4: getting-started/google-analytics.md
+    - Google Tag Manager (GTM): getting-started/google-tag-manager.md
+    - Debug (GTM): getting-started/debug.md
+    - Scheduling (GTM): getting-started/scheduling.md
+    - Folder Structure (GTM): getting-started/folder-structure.md
+    - Publish Setup/Experiment: getting-started/publish-experiment.md
+    - View Experiment (Live Site): getting-started/view-experiment.md
   - Targetting:
-    - Page Path: targetting.md
-    - Device Type: targetting.md
-    - Class Based: targetting.md
+    - Page Path: targetting/page-path.md
+    - Device Type: targetting/device.md
+    - Class Based: targetting/class.md
   - Experiment Type:
-    - Split Test (Redirect): splittest.md
+    - Split Test (Redirect): experiment-type/splittest.md
     - MVT: splittest.md
   - Analysis GA4:
     - Free Form: analyses.md
