@@ -7,17 +7,23 @@ The tools we will be using are:
 * Google Analytics 4
 * Google Tag Manager
 
-**Google Analytics 4** is a freemium web analytics service offered by Google. It is the successor to Universal Analytics and was released in October 2020.
+**Google Analytics 4** is a freem web analytics service offered by Google. It is the successor to Universal Analytics and was released in October 2020.
 
 **Google Tag Manager** is a free web application that allows you to manage your website's tags without having to edit your website's code.
 
+[Get started](getting-started/checklist.md){ .md-button .md-button--primary }
+
 ---
+
+## Podcast from Sander Volbeda
 
 If you prefer to listen to the specifics instead of reading the entire page, that option is now available. The principles are also clarified in this episode of "[Golden Nuggets for Experimentation](https://gnexperimentation.substack.com){:target="_blank"}".
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3njS8Awjy4b0bkN74QkkUu?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ---
+
+## Pros/Cons
 
 **Pros:**
 
@@ -37,7 +43,7 @@ If you prefer to listen to the specifics instead of reading the entire page, tha
 
 ---
 
-## Explanation in text
+## Written Explanation
 
 This process is asynchronous, which means that it occurs during the website loading phase rather than after it has loaded.
 
