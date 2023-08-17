@@ -133,7 +133,7 @@ nav:
     - Split Test (Redirect): experiment-type/splittest.md
     - MVT: splittest.md
   - Analysis GA4:
-    - Free Form: analyses.md
+    - Free Form: analyses/free-form.md 
   - Development:
     - JavaScript: development.md
     - TamperMonkey: development.md
