@@ -128,17 +128,17 @@ nav:
   - Targetting:
     - Page Path: targetting/page-path.md
     - Device Type: targetting/device.md
-    - Class Based: targetting/class.md
+    # - Class Based: targetting/class.md
   - Experiment Type:
     - Split Test (Redirect): experiment-type/splittest.md
-    - MVT: splittest.md
+    # - MVT: splittest.md
   - Analysis GA4:
     - Free Form: analyses/free-form.md 
-  - Development:
-    - JavaScript: development.md
-    - TamperMonkey: development.md
-    - Reduce Load Time: development.md
-    - Experiment Heatmaps: development.md
-  - Extra:
-    - Changelog: setup.md
-    - Contribution: setup.md
+  # - Development:
+    # - JavaScript: development.md
+    # - TamperMonkey: development.md
+    - Reduce Load Time: development/reduce-load-time.md
+    # - Experiment Heatmaps: development.md
+  - Other:
+    - Changelog: changelog.md
+    - Contribution: contribution.md
