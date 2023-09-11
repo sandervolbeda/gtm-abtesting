@@ -21,7 +21,7 @@ The experiment's analysis will be conducted through the utilization of Google An
 
     > Important! Ensure that each slot is placed on a separate row, as indicated by the placeholder.
 
-    [ADD IMAGE HERE]
+    ![GA Free-form control segment](ga-freeform-control.png)
 
 4. Check **At any point in time**.
 5. **Save and apply**.
@@ -39,13 +39,13 @@ The experiment's analysis will be conducted through the utilization of Google An
 
     > Important! Ensure that each slot is placed on a separate row, as indicated by the placeholder.
 
-    [ADD IMAGE HERE]
+    ![GA Free-form control segment](ga-freeform-variant.png)
 
 4. Check **At any point in time**.
 5. **Save and apply**.
 6. For **PIVOT** select **First column**
 
-[ADD IMAGE HERE]
+![GA Free-form control segment](ga-freeform-results.png)
 
 ## Dimensions
 

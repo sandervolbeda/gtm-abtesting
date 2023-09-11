@@ -24,6 +24,6 @@ Let's dive into GA first.
 
 6. **Save**
 
-![Custom Dimension](ga-custom-dimension.png)
+![Console Check version](web-view-experiment.png)
 
 *One downside of GA is that it can take time for data to appear. In some cases, it may take up to 48 hours after creating a custom definition for data to start showing in GA.*

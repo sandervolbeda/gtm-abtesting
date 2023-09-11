@@ -15,7 +15,7 @@ This section keeps you informed about recent updates and what's planned for the 
 * Replaced the favicon.
 * General renamed Google Analytics 4 (GA4) to Google Analytics. 
 * Getting Started - Content of the pages Checklist & Debug has been updated.
-* Images have been added
+* Images have been added to every guide where nedeed.
 
 ---
 ## Update 23-08-2023

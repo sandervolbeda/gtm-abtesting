@@ -20,4 +20,6 @@ label {
 p > img {
     -webkit-box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.15); 
     box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.15);
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
