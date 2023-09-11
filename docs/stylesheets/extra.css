@@ -1,3 +1,22 @@
+body {
+    background-color: #f9f9f9;
+    color: #0f0f0f;
+}
+
+.md-header {
+   background-color: #4000f6 !important; 
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+    font-weight: 700 !important;
+    color: #0f0f0f;
+}
+
+label {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
 p > img {
     -webkit-box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.15); 
     box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.15);
