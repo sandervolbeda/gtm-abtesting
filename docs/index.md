@@ -4,7 +4,7 @@ The goal of this website is to make A/B testing available to everyone. To do thi
 
 The tools we will be using are:
 
-* Google Analytics 4
+* Google Analytics
 * Google Tag Manager
 
 **Google Analytics 4** is a freem web analytics service offered by Google. It is the successor to Universal Analytics and was released in October 2020.

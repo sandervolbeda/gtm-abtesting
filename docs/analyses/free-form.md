@@ -1,4 +1,4 @@
-# Free form GA4
+# Free form Google Analytics
 
 The experiment's analysis will be conducted through the utilization of Google Analytics, employing the free form option for this purpose.
 
@@ -51,11 +51,7 @@ The experiment's analysis will be conducted through the utilization of Google An
 
 Dimensions can be employed by selecting them. One commonly utilized dimension is **Device category**, which provides insights into the performance of experiments across different devices.
 
-[ADD IMAGE HERE]
-
 ## Metrics 
 
 Select the metrics that require analysis. For instance, consider **Total users** and **Purchases**. The data will be displayed in the form.
-
-[ADD IMAGE HERE]
 

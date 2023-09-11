@@ -4,10 +4,18 @@ This section keeps you informed about recent updates and what's planned for the 
 
 ## Currently in Progress
 
-1. Adding **images** to enhance content
-2. Creating **videos** to enhance content
-3. **Multi-Variant Testing** (MVT)
-4. **Page Targeting** based on body class
+1. Creating **videos** to enhance content
+2. **Multi-Variant Testing** (MVT)
+3. Different ways of **Page Targeting**. Example: Based on body class.
+
+---
+## Update 11-9-2023
+
+* Logo has been added.
+* Replaced the favicon.
+* General renamed Google Analytics 4 (GA4) to Google Analytics. 
+* Getting Started - Content of the pages Checklist & Debug has been updated.
+* Images have been added
 
 ---
 ## Update 23-08-2023

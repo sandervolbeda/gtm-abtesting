@@ -3,7 +3,7 @@
 ## Workspace
 It is recommended to avoid working directly on the master branch (or the default Workspace in this case). To begin, launch GTM (Google Tag Manager). In the left sidebar, locate the Default Workspace option and click on it. Then, in the upper right corner, look for the + icon and click on it.
 
-[ADD IMAGE HERE]
+![GTM Workspace](gtm-workspace.png)
 
 | Field:         | Input:           |
 | ------------- |:-------------|
@@ -37,19 +37,17 @@ The first step is to create a new variable. This JavaScript will create the ``ve
     ```
 6. **Save**
 
-[ADD IMAGE HERE]
+![GTM Version variable](gtm-version-variable.png)
 
 ---
 
 ## Triggers
 
-Next, we will configure the triggers. Three triggers are required to execute a single experiment:
+Next, the triggers. Three triggers are required to execute a single experiment:
 
 * Initialization trigger: This trigger fires when the experiment is first initialized.
 * Control – Page View: This trigger fires when a visitor views the control page.
 * Variant – Page View: This trigger fires when a visitor views the variant page.
-
----
 
 ### Initialization
 
@@ -75,7 +73,7 @@ This trigger fires when the experiment is first initialized. To create it, follo
 
 > 3. This is also where you can add more requirements, such as device targeting.
 
-[ADD IMAGE HERE]
+![GTM Initialisation trigger](gtm-initialisation-trigger.png)
 
 ---
 
@@ -106,7 +104,7 @@ Next, we will create the trigger for the control experiment. To do this, follow 
 
 8. Click **Save**.
 
-[ADD IMAGE HERE]
+![GTM Control trigger](gtm-control-trigger.png)
 
 ---
 
@@ -137,15 +135,13 @@ Now, let’s delve into the experiment trigger (for the variant).
 
 8. Click **Save**.
 
-[ADD IMAGE HERE]
+![GTM Variant trigger](gtm-variant-trigger.png)
 
 ---
 
 ## Tags
 
-It is now time to add three new tags and make adjustments to the GA4 configuration. This will ensure that the data is sent to the custom definition we created in GA4.
-
----
+It is now time to add three new tags and make adjustments to the  configuration. This will ensure that the data is sent to the custom definition we created in GA.
 
 ### Splitter Tag
 
@@ -179,7 +175,7 @@ To create the split tag, follow these steps:
 6. Select the **Trigger** as **Experiment 1 – Initialization**.
 7. Click **Save**.
 
-[ADD IMAGE HERE]
+![GTM Initialization tag](gtm-initialisation-tag.png)
 
 ---
 
@@ -210,7 +206,7 @@ To create the control tag, follow these steps:
 
 > A script is also being run for the control variant. This allows for additional tracking to be set up, for example.
 
-[ADD IMAGE HERE]
+![GTM Control tag](gtm-control-tag.png)
 
 ---
 
@@ -240,18 +236,18 @@ To create the variant tag, follow these steps:
 
 > This is where you can add the JavaScript for your experiment to manipulate the page.
 
-[ADD IMAGE HERE]
+![GTM Variant tag](gtm-variant-tag.png)
 
 ---
 
-## GA4 Confirguration tag
+## GA Confirguration tag
 
 To complete the setup, we need to edit the Google Analytics tag.
 
-1. Open the GA4 configuration tag.
+1. Open the GA configuration tag.
 2. In the **User Properties** section, add a new row.
 3. In the **Property name** field, enter ```Version```.
 4. In the **Value** field, enter the value of the ```Version``` variable.
 5. Click **Save**.
 
-[ADD IMAGE HERE]
+![GTM GA tag](gtm-ga-tag.png)

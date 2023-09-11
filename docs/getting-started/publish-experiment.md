@@ -5,11 +5,11 @@ The setup is complete. To publish the experiment, follow these steps:
 1. Click the blue **Submit** button in the top right corner.
 2. Click **Publish**.
 3. Close the slide-in.
-4. Open the **Workspace** you are currently in.
+4. Go to **Workspace** tab.
 5. Click **Update** (next to **This workspace is out of date**).
 6. Click **Update**.
 
-[ADD IMAGE HERE]
+![GTM Publish experiment](gtm-publish-experiment.png)
 
 The experiment is now live!
 

@@ -9,4 +9,4 @@ Since there are numerous tags, triggers, and variables involved in experimentati
 5. Select all **Experimentation**-related items (do not include GA configuration).
 6. Select **Move** and move the items to the **Experimentation** folder.
 
-[ADD IMAGE HERE]
+![GTM Folder structure](gtm-folder.png)

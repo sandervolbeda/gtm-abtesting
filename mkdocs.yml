@@ -117,7 +117,7 @@ nav:
   - Welcome: index.md
   - Getting Started: 
     - Checklist: getting-started/checklist.md
-    - Google Analytics 4: getting-started/google-analytics.md
+    - Google Analytics: getting-started/google-analytics.md
     - Google Tag Manager (GTM): getting-started/google-tag-manager.md
     - Debug (GTM): getting-started/debug.md
     - Scheduling (GTM): getting-started/scheduling.md
@@ -131,7 +131,7 @@ nav:
   - Experiment Type:
     - Split Test (Redirect): experiment-type/splittest.md
     # - MVT: splittest.md
-  - Analysis GA4:
+  - Analysis GA:
     - Free Form: analyses/free-form.md 
   # - Development:
     # - JavaScript: development.md
