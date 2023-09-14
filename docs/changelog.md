@@ -7,6 +7,7 @@ This section keeps you informed about recent updates and what's planned for the 
 1. Creating **videos** to enhance content
 2. **Multi-Variant Testing** (MVT)
 3. Different ways of **Page Targeting**. Example: Based on body class.
+4. **Anti-flickering** solution
 
 ---
 ## Update 11-9-2023
