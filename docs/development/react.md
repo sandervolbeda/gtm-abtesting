@@ -14,21 +14,21 @@ Here's a simplified explanation:
 There is a work-around. In JavaScript, `window.onload` is an event handler that's used to execute a function or a block of code when a web page has finished loading completely. It's like telling JavaScript, "Hey, wait until everything on the web page is ready, including all images, styles, and scripts, and then do something."
 
 ``` py linenums="1"
-    <script>
-      (function () {
+<script>
+    (function () {
 
-        // start window.onload
+    // start window.onload
 
-        window.onload = function() {
-            'use strict';
+    window.onload = function() {
+        'use strict';
 
-              // experiment code here
-        };
+            // experiment code here
+    };
 
-        // end window.onload
+    // end window.onload
 
-      })();
-    </script>
-    ```
+    })();
+</script>
+```
 
 > Keep in mind that it increasing the change of the flickering effect.
