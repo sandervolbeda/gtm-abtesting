@@ -6,9 +6,9 @@ Now, when it comes to loading external scripts in React, it can sometimes be a b
 
 Here's a simplified explanation:
 
-1. Virtual DOM: React uses a Virtual DOM, which is a lightweight representation of the actual DOM. When you update something in your React component, it first updates the Virtual DOM, not the real DOM. This is done for efficiency because changing the real DOM can be slow and resource-intensive.
+1. **Virtual DOM:** React uses a Virtual DOM, which is a lightweight representation of the actual DOM. When you update something in your React component, it first updates the Virtual DOM, not the real DOM. This is done for efficiency because changing the real DOM can be slow and resource-intensive.
 
-2. Asynchronous Updates: React often updates the DOM asynchronously. This means that when you load an external script, it might not immediately be recognized or integrated into the Virtual DOM or the actual DOM. React might not "see" the changes made by the script right away.
+2. **Asynchronous Updates:** React often updates the DOM asynchronously. This means that when you load an external script, it might not immediately be recognized or integrated into the Virtual DOM or the actual DOM. React might not "see" the changes made by the script right away.
 
 ## Solving this issue
 There is a work-around. In JavaScript, `window.onload` is an event handler that's used to execute a function or a block of code when a web page has finished loading completely. It's like telling JavaScript, "Hey, wait until everything on the web page is ready, including all images, styles, and scripts, and then do something."
@@ -17,15 +17,13 @@ There is a work-around. In JavaScript, `window.onload` is an event handler that'
 <script>
     (function () {
 
-    // start window.onload
+        // start window.onload
+        window.onload = function() {
+         'use strict';
 
-    window.onload = function() {
-        'use strict';
-
-            // experiment code here
-    };
-
-    // end window.onload
+                // experiment code here
+         };
+        // end window.onload
 
     })();
 </script>
