@@ -133,11 +133,12 @@ nav:
     # - MVT: splittest.md
   - Analysis GA:
     - Free Form: analyses/free-form.md 
-  # - Development:
+  - Development:
     # - JavaScript: development.md
     # - TamperMonkey: development.md
     - Reduce Load Time: development/reduce-load-time.md
     # - Experiment Heatmaps: development.md
+    - React: development/react.md
   - Other:
     - Changelog: changelog.md
     - Contribution: contribution.md
