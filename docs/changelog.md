@@ -10,6 +10,13 @@ This section keeps you informed about recent updates and what's planned for the 
 4. **Anti-flickering** solution
 
 ---
+## Update 20-9-2023
+
+* Updated some content.
+* Added work-around for [React](development/react.md).
+* Started testing how to collect heatmaps and recordings for specific experiments.
+
+---
 ## Update 11-9-2023
 
 * Logo has been added.
