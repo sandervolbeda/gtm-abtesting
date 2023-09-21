@@ -131,8 +131,9 @@ nav:
   - Experiment Type:
     - Split Test (Redirect): experiment-type/splittest.md
     # - MVT: splittest.md
-  - Analysis GA:
+  - Analysis:
     - Free Form: analyses/free-form.md 
+    - Clarity: analyses/clarity.md
   - Development:
     # - JavaScript: development.md
     # - TamperMonkey: development.md
