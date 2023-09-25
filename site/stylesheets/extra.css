@@ -25,12 +25,11 @@ p > img {
 }
 
 .md-typeset .md-button--primary {
-    border: 0;
-    background-color: #FF7537 !important;
-    text-align: center;
+    background-color: #FF7537;
+    border: 0 !important;
 }
 
-@media (max-width:500px)  {
+@media screen and (max-width: 450px) {
     .md-typeset .md-button--primary {
         width: 100%;
     }
