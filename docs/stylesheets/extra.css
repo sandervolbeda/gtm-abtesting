@@ -23,3 +23,14 @@ p > img {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+.md-typeset .md-button--primary {
+    background-color: #FF7537;
+    border: 0 !important;
+}
+
+@media screen and (max-width: 450px) {
+    .md-typeset .md-button--primary {
+        width: 100%;
+    }
+}
