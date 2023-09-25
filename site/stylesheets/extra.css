@@ -23,3 +23,15 @@ p > img {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+.md-typeset .md-button--primary {
+    border: 0;
+    background-color: #FF7537 !important;
+    text-align: center;
+}
+
+@media (max-width:500px)  {
+    .md-typeset .md-button--primary {
+        width: 100%;
+    }
+}
