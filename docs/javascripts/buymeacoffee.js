@@ -1,4 +1,4 @@
-(function () {
+/* (function () {
     // Create a script element for the Buy Me a Coffee widget
     var bmcsScript = document.createElement('script');
 
@@ -20,3 +20,4 @@
     // Append the Buy Me a Coffee script element to the footer
     footer.appendChild(bmcsScript);
 })();
+*/

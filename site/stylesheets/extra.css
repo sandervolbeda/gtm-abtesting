@@ -27,6 +27,7 @@ p > img {
 .md-typeset .md-button--primary {
     background-color: #FF7537;
     border: 0 !important;
+    text-align: center;
 }
 
 @media screen and (max-width: 450px) {
