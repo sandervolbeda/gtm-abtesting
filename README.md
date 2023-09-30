@@ -16,4 +16,5 @@ To deploy updates use:
 mkdocs gh-deploy
 ```
 
+Extend the theme: https://squidfunk.github.io/mkdocs-material/customization/
 Material theme source files: https://github.com/squidfunk/mkdocs-material/tree/master/src/templates
