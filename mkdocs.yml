@@ -6,7 +6,7 @@ site_description: >-
 
 theme:
   name: material
-  # custom_dir: overrides
+  custom_dir: overrides
   features:
     - announce.dismiss
     - content.tabs.link
