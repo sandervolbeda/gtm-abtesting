@@ -8,6 +8,7 @@ theme:
   name: material
   custom_dir: overrides
   features:
+    - header.autohide
     - announce.dismiss
     - content.tabs.link
     - content.action.edit
@@ -43,7 +44,7 @@ theme:
        # icon: material/brightness-4
         #name: Switch to light mode 
   font:
-    text: Roboto
+    text: Inter
     code: Roboto Mono
   favicon: img/favicon.png
   logo: img/logo.svg

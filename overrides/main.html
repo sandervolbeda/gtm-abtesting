@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-525ZBCP9');</script>
+<!-- End Google Tag Manager -->
 <meta name="google-site-verification" content="_IRB9D2-ldvb6stuu-YXM7dpraqRAY2eAnPcrwaA0nE" />
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sandervolbeda" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+{% endblock %}
+
+{% block announce %}
+  {{ super() }}
+  <p style="font-weight: 800; text-align: center; color: #fff; display: flex; justify-content: center; align-items: center;"><span style="font-size: 24px; margin-right: 6px;">🧠</span>Do you need help with the setup or CRO? <a href="#" target="_blank" style="color: #FFF; text-decoration: underline; margin-left: 6px;">Reach out to me.</a></p>
 {% endblock %}
