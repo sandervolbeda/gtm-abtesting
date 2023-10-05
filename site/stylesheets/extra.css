@@ -7,9 +7,10 @@ body {
    background-color: #4000f6 !important; 
 }
 
-h1, h2, h3, h4, h5 ,h6 {
+.md-typeset h1, h2, h3, h4, h5 ,h6 {
     font-weight: 700 !important;
     color: #0f0f0f;
+    text-transform: capitalize;
 }
 
 label {
@@ -34,4 +35,24 @@ p > img {
     .md-typeset .md-button--primary {
         width: 100%;
     }
+}
+
+iframe {
+    width: 100%;
+}
+
+.md-tabs {
+    background-color: #1A0065;
+    color: #ffffff !important; 
+    font-weight: 600;
+    font-size: 14px !important;
+}
+
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > ul > li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested > div {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > ul > li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested > div > a {
+    color: #0f0f0f !important;
 }
