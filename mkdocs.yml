@@ -18,7 +18,8 @@ theme:
     - content.tooltips
     - navigation.instant
     - navigation.instant.prefetch
-    # - navigation.tabs
+    - navigation.instant.progress
+    - navigation.tabs
     - navigation.sections
     - navigation.top
     - navigation.footer
@@ -117,16 +118,18 @@ extra_javascript:
   - javascripts/buymeacoffee.js
 
 nav:
-  - Welcome: index.md
+  - Home: 
+    - Introduction: index.md
+    - About: home/about.md
   - Getting Started: 
-    - Checklist: getting-started/checklist.md
-    - Google Analytics: getting-started/google-analytics.md
-    - Google Tag Manager (GTM): getting-started/google-tag-manager.md
-    - Debug (GTM): getting-started/debug.md
-    - Scheduling (GTM): getting-started/scheduling.md
-    - Folder Structure (GTM): getting-started/folder-structure.md
-    - Publish Setup/Experiment: getting-started/publish-experiment.md
-    - View Experiment (Live Site): getting-started/view-experiment.md
+    - 1. Checklist: getting-started/checklist.md
+    - 2. Google Analytics: getting-started/google-analytics.md
+    - 3. Google Tag Manager (GTM): getting-started/google-tag-manager.md
+    - 4. Debug (GTM): getting-started/debug.md
+    - 5. Scheduling (GTM): getting-started/scheduling.md
+    - 6. Folder Structure (GTM): getting-started/folder-structure.md
+    - 7. Publish Setup/Experiment: getting-started/publish-experiment.md
+    - 8. View Experiment (Live Site): getting-started/view-experiment.md
   - Targetting:
     - Page Path: targetting/page-path.md
     - Device Type: targetting/device.md
@@ -146,3 +149,5 @@ nav:
   - Other:
     - Changelog: changelog.md
     - Contribution: contribution.md
+  - Consultancy: https://sandervolbeda.com/
+  - Newsletter: https://gnexperimentation.substack.com/

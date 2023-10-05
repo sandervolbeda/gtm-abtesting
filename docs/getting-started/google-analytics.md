@@ -2,11 +2,6 @@
 
 Creating a custom definition in Google Analytics (GA) is the first step. This will connect GA and GTM. It is important to start with this step, as it can take time for data to appear in GA4.
 
----
-
-## Google Analytics
-Let's dive into GA first.
-
 > It is important to note that, with the current setup, one user can only view one experiment. Therefore, running multiple experiments at the same time will drastically reduce the number of users in each experiment.
 
 1. Open **Google Analytics**.

@@ -4,10 +4,7 @@ The goal of this website is to make A/B testing available to everyone. To do thi
 
 The tools we will be using are:
 
-* Google Analytics
-* Google Tag Manager
-
-**Google Analytics 4** is a freem web analytics service offered by Google. It is the successor to Universal Analytics and was released in October 2020.
+**Google Analytics 4** is a free web analytics service offered by Google. It is the successor to Universal Analytics and was released in October 2020.
 
 **Google Tag Manager** is a free web application that allows you to manage your website's tags without having to edit your website's code.
 
@@ -15,7 +12,7 @@ The tools we will be using are:
 
 ---
 
-## Podcast from Sander Volbeda
+## Learn more from my Podcast
 
 If you prefer to listen to the specifics instead of reading the entire page, that option is now available. The principles are also clarified in this episode of "[Golden Nuggets for Experimentation](https://gnexperimentation.substack.com){:target="_blank"}".
 
@@ -32,7 +29,7 @@ If you prefer to listen to the specifics instead of reading the entire page, tha
 - Client-side
 - Free
 - Does not use cookies (uses localStorage)
-- Loads asynchronously
+- Loads asynchronously (still flickering might occur)
 
 **Cons:**
 

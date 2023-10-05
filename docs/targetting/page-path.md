@@ -3,7 +3,8 @@ A page path, often referred to as a URL path or simply a path, is a specific seg
 
 In a typical URL format like ```https://sandervolbeda.com/page/subpage```, the page path is the portion after the domain (sandervolbeda.com). In this example, the page path is /page/subpage. Each segment of the path, separated by slashes (/), represents a specific directory or subdirectory within the website's structure.
 
-## Single Page Select
+---
+
 Selecting a page path that matches a specific criterion.
 
 1. Access the **Triggers** section found on the left-hand side.

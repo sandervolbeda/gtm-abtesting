@@ -1,7 +1,7 @@
 # Device Type
 To run experiments selectively for particular devices, follow these steps. No action is needed if the experiment encompasses all devices. However, if the aim is to conduct an experiment solely for mobile users, additional configuration is necessary.
 
-## Custom JavaScript Variable
+## 1. Custom JavaScript Variable
 The first step is setting up the variable.
 
 1. Access **Google Tag Manager**.
@@ -27,7 +27,7 @@ function(){
 ```
 7. **Save** the changes.
 
-## Triggers
+## 2. Triggers
 The following steps pertain to all triggers labeled as 'Initialisation, Experiment 1 – Control, Experiment 1 – Variant'. To exemplify, a single instance will be provided, yet the process remains consistent for all experiment-related triggers.
 
 1. Access the **Triggers** section found on the left-hand side.
@@ -43,7 +43,7 @@ Carry out this procedure similarly for the **remaining triggers** (Experiment 1 
 
 Remember to preview the outcomes within GTM's preview mode prior to finalizing any publishing.
 
-## JavaScript explained
+## 3. JavaScript explained
 More information about the JavaScript code.
 
 * Retrieves the width of the window.
