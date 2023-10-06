@@ -130,10 +130,10 @@ nav:
     - 6. Folder Structure (GTM): getting-started/folder-structure.md
     - 7. Publish Setup/Experiment: getting-started/publish-experiment.md
     - 8. View Experiment (Live Site): getting-started/view-experiment.md
-  - Targetting:
-    - Page Path: targetting/page-path.md
-    - Device Type: targetting/device.md
-    - Class Based: targetting/class.md
+  - Targeting:
+    - Page Path: targeting/page-path.md
+    - Device Type: targeting/device.md
+    - Class Based: targeting/class.md
   - Experiment Type:
     - Split Test (Redirect): experiment-type/splittest.md
     # - MVT: splittest.md

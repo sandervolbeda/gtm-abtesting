@@ -1,5 +1,5 @@
 # Class Based
-To run experiments selectively based on class, follow these steps. This can be used, for example with WordPress. The body class always has the page type assigned to it (if configured correctly). This can be a good solution if page path targetting is not possible.
+To run experiments selectively based on class, follow these steps. This can be used, for example with WordPress. The body class always has the page type assigned to it (if configured correctly). This can be a good solution if page path targeting is not possible.
 
 ## 1. Custom JavaScript Variable
 The first step is setting up the variable.

@@ -10,6 +10,13 @@ This section keeps you informed about recent updates and what's planned for the 
 4. Different ways of **Page Targeting**. Example: Based on body class.
 
 ---
+## Update 6-10-2023
+
+* New page: [Class Based targettomg](targetting/class-based.md).
+
+This kind of targetting can help if the URL structure is inconsistent to use for page path targetting. This is especially handy with WordPress for example.
+
+---
 ## Update 5-10-2023
 
 * New page: [About me](home/about.md).
