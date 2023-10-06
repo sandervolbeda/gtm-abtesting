@@ -133,7 +133,7 @@ nav:
   - Targeting:
     - Page Path: targeting/page-path.md
     - Device Type: targeting/device.md
-    - Class Based: targeting/class.md
+    - Class Based: targeting/class-based.md
   - Experiment Type:
     - Split Test (Redirect): experiment-type/splittest.md
     # - MVT: splittest.md
