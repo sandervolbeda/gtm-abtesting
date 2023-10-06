@@ -133,7 +133,7 @@ nav:
   - Targetting:
     - Page Path: targetting/page-path.md
     - Device Type: targetting/device.md
-    # - Class Based: targetting/class.md
+    - Class Based: targetting/class.md
   - Experiment Type:
     - Split Test (Redirect): experiment-type/splittest.md
     # - MVT: splittest.md
@@ -149,5 +149,5 @@ nav:
   - Other:
     - Changelog: changelog.md
     - Contribution: contribution.md
-  - Consultancy: https://sandervolbeda.com/
-  - Newsletter: https://gnexperimentation.substack.com/
+  - 🧠 Consultancy: https://sandervolbeda.com/
+  - 📰 Newsletter: https://gnexperimentation.substack.com/
