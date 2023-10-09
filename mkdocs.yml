@@ -141,10 +141,10 @@ nav:
     - Free Form: analyses/free-form.md 
     - Clarity: analyses/clarity.md
   - Development:
+    - Anti-flicker: development/anti-flicker.md
     # - JavaScript: development.md
     # - TamperMonkey: development.md
     - Reduce Load Time: development/reduce-load-time.md
-    # - Experiment Heatmaps: development.md
     - React: development/react.md
   - Other:
     - Changelog: changelog.md
