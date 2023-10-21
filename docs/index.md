@@ -1,4 +1,4 @@
-# Welcome
+# Free A/B testing with Google Tag Manager (GTM) and Google Analytics (GA)
 
 The goal of this website is to make A/B testing available to everyone. To do this, we will only be using free tools.
 
