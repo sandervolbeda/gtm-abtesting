@@ -12,7 +12,7 @@ This section keeps you informed about recent updates and what's planned for the 
 ---
 ## Update 6-10-2023
 
-* New page: [Class Based targettomg](targetting/class-based.md).
+* New page: [Class Based targeting](targeting/class-based.md).
 
 This kind of targetting can help if the URL structure is inconsistent to use for page path targetting. This is especially handy with WordPress for example.
 
