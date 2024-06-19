@@ -240,7 +240,7 @@ To create the variant tag, follow these steps:
 
 ---
 
-## GA Confirguration tag
+## GA Experimentation event
 
 To complete the setup, we need to fire a event to push the Version variable to Google Analytics.
 
