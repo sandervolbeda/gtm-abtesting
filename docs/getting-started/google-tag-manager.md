@@ -242,12 +242,15 @@ To create the variant tag, follow these steps:
 
 ## GA Confirguration tag
 
-To complete the setup, we need to edit the Google Analytics tag.
+To complete the setup, we need to fire a event to push the Version variable to Google Analytics.
 
-1. Open the GA configuration tag.
-2. In the **User Properties** section, add a new row.
-3. In the **Property name** field, enter ```Version```.
-4. In the **Value** field, enter the value of the ```Version``` variable.
-5. Click **Save**.
+1. Create a **new** tag.
+2. Name: **GA4 - Experimentation event**.
+3. For the tag configuration select **Google Analytics > Google Analytics: GA4 Event**.
+4. Add your Measurement ID (can be found in GA > Settings > Data streams > select data stream > Look for measurement ID).
+5. Add **Event Name**: experiment_version
+6. Add **User Properties** - Property Name: Version
+7. Add **User Properties** - Value: ```{{Version}}```
+8. Triggering type: All Pages
 
 ![GTM GA tag](gtm-ga-tag.png)
