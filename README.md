@@ -12,12 +12,24 @@ python install -r requirements.txt
 
 Use the following command to run the project:
 ```
-mkdocs serve
+mkdocs serve 
+(if that doesn't work, use python3 -m mkdocs serve)
+```
+
+or use this alternative
+
+```
+python3 -m mkdocs serve
 ```
 
 To deploy updates, use:
 ```
 mkdocs gh-deploy
+```
+
+or use this alternative
+```
+python3 -m mkdocs build
 ```
 
 - Extend the theme: https://squidfunk.github.io/mkdocs-material/customization/
