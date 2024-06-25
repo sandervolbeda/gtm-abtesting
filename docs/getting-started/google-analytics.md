@@ -2,10 +2,10 @@
 
 Creating a custom definition in Google Analytics (GA) is the first step. This will connect GA and GTM. It is important to start with this step, as it can take time for data to appear in GA4.
 
-> It is important to note that, with the current setup, one user can only view one experiment. Therefore, running multiple experiments at the same time will drastically reduce the number of users in each experiment.
+> It is important to note that, with the current setup, one user can only view one experiment. Therefore, running multiple experiments at the same time at the same page will drastically reduce the number of users in each experiment.
 
 1. Open **Google Analytics**.
-2. Go to **Account > Property**.
+2. Go to **Account > Admin**.
 3. Click **Custom definitions** in the property list.
 4. Click the button **Create custom dimensions**.
 5. Fill all the fields with the following details
