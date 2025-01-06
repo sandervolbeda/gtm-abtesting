@@ -63,3 +63,32 @@ When adding the tag to the code, it will automatically update in the project wit
 5. Select or type the value.
 6. Apply filters.
 7. Optionally: Adjust the date range to access more data.
+
+## Wait for Microsoft Clarity to load
+
+In some cases you want to fire the custom tag before Microsoft Clarity starts collecting data. This can be done by checking the status of Microsoft Clarity. It will first check if the Microsoft Clarity library is loaded, and then check if it's ready to collect data.
+
+Here's an example of how to wait for Microsoft Clarity to load:
+
+``` py linenums="1"
+<script>
+  function waitForClarity(callback) {
+    // Check if clarity() is defined
+    if (typeof clarity === 'function') {
+      callback();
+    } else {
+      // Wait 50ms, then check again
+      setTimeout(function() {
+        waitForClarity(callback);
+      }, 50);
+    }
+  }
+
+  // Call our wait function, and when ready, run our code
+  waitForClarity(function() {
+    console.log("Variant loaded");
+    clarity("set", "experiment-1", "variant");
+  });
+</script>
+```
+
