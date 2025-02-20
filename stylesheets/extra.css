@@ -1,0 +1,58 @@
+body {
+    background-color: #f9f9f9;
+    color: #0f0f0f;
+}
+
+.md-header {
+   background-color: #4000f6 !important; 
+}
+
+.md-typeset h1, h2, h3, h4, h5 ,h6 {
+    font-weight: 700 !important;
+    color: #0f0f0f;
+    text-transform: capitalize;
+}
+
+label {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+p > img {
+    -webkit-box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.15); 
+    box-shadow: 1px 6px 5px 0px rgba(0,0,0,0.15);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.md-typeset .md-button--primary {
+    background-color: #FF7537;
+    border: 0 !important;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .md-typeset .md-button--primary {
+        width: 100%;
+    }
+}
+
+iframe {
+    width: 100%;
+}
+
+.md-tabs {
+    background-color: #1A0065;
+    color: #ffffff !important; 
+    font-weight: 600;
+    font-size: 14px !important;
+}
+
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > ul > li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested > div {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > ul > li.md-nav__item.md-nav__item--active.md-nav__item--section.md-nav__item--nested > div > a {
+    color: #0f0f0f !important;
+}
