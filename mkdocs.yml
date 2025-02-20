@@ -127,9 +127,10 @@ nav:
     - 3. Google Tag Manager (GTM): getting-started/google-tag-manager.md
     - 4. Debug (GTM): getting-started/debug.md
     - 5. Scheduling (GTM): getting-started/scheduling.md
-    - 6. Folder Structure (GTM): getting-started/folder-structure.md
-    - 7. Publish Setup/Experiment: getting-started/publish-experiment.md
-    - 8. View Experiment (Live Site): getting-started/view-experiment.md
+    - 6. Preview Experiment: getting-started/preview-experiment.md
+    - 7. Folder Structure (GTM): getting-started/folder-structure.md
+    - 8. Publish Setup/Experiment: getting-started/publish-experiment.md
+    - 9. View Experiment (Live Site): getting-started/view-experiment.md
   - Targeting:
     - Page Path: targeting/page-path.md
     - Device Type: targeting/device.md
